@@ -1,0 +1,45 @@
+﻿        html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, form {
+                padding: 0;  margin: 0;  font-size: 100%; font-weight: normal;  height: normal;
+        }
+        table { border-collapse: collapse; border-spacing: 0; }
+        td, th, caption { font-weight: normal; text-align: left; }
+/*главное меню*/
+#nav{
+        float:left;
+        width:100%;
+        lilst-style:none;
+        font-weight:bold;
+        margin-botton:10px;
+}
+#nav li{
+        float:left;
+        margin-right:10px;
+        position:relative;
+        display:block;
+        padding:5px;
+        color:#fff;
+        background:#00f;
+}
+#nav li:hover{
+        color:#fff;
+        background:#ff0000;
+        text-decoration:underline;
+}
+
+/* выпадающие пункты */
+#nav ul{
+        list-style:none;
+        position:absolute;
+        display:none; /* скрыть когда не нужно */
+}
+
+#nav ul li{
+        white-space:nowrap; /* выравн по длине текста */
+        padding-top:lpx; /* разделить пункты */
+        float:none;
+}
+
+#nav li:hover ul{ /* вывести пункт при навед курсора */
+        left:0;
+        display:block;
+}
